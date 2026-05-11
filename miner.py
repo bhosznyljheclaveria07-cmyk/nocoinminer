@@ -1,4 +1,3 @@
-```python id="x9m2qw"
 import requests
 import time
 import hashlib
@@ -245,4 +244,3 @@ while True:
     except Exception as e:
         print("[ERROR]", e)
         time.sleep(15)
-```
