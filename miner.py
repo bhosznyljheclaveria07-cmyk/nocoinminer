@@ -173,8 +173,7 @@ def solve_puzzle(puzzle):
         answer = ask_groq(prompt)
 
     if answer:
-        answer = str(answer).lower().strip()
-
+        answer = ( str(answer) .lower() .strip() .replace(".", "") .replace(",", "") )
         cache[prompt] = answer
         save_cache()
 
