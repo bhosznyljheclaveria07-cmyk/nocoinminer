@@ -162,6 +162,7 @@ def solve_puzzle(puzzle):
     # REVERSE
     elif "reverse" in prompt_lower:
         answer = solve_reverse(prompt)
+    elif "post-quantum signature scheme" in prompt_lower: answer = "dilithium"    
 
     # MATH
     elif "calculate" in prompt_lower or "what is" in prompt_lower:
